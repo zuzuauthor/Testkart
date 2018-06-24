@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#68C6EC</color>  <!--#009688-->
+    <color name="colorPrimaryDark">#488aa5</color> <!--#00796B-->
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="green">#7ec912</color>
+    <color name="sky_blue">#2691a1</color>
+    <color name="purple">#7F8C8D</color>
+    <color name="pink_red">#FF5252</color>
+    <color name="yellow">#e59e31</color>
+    <color name="red">#ff0000</color>
+    <color name="positive_green">#008813</color>
+    <color name="blue">#4da6ff</color>
+
+    <color name="cart_buy_price">#29313e</color>
+    <color name="cart_cut_price">#8f9297</color>
+
+
+    <color name="transparent">#00000000</color>
+    <!-- card colors -->
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_detailing">#eee</color>
+
+</resources>

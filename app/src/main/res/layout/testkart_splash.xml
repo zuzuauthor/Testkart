@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:foo="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"> <!--#68C6EC-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@raw/test_logo1"/>
+
+        <!--<com.testkart.examtestkart.exam.testkart.widgets.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#191919"
+            android:text="The online exam store"
+            foo:customFont="din_light.otf"/>-->
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

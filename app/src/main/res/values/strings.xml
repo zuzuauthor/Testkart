@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Testkart</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_message">Message</string>
+    <string name="action_wallet">0.00</string>
+    <string name="action_logout">Logout</string>
+    <string name="back_text">&lt;&lt; BACK</string>
+    <!--<string name="facebook_app_id">123442028312001</string>--> ID of my account
+
+    <string name="facebook_app_id">1347711891948040</string>
+
+
+    <string name="access_code">Access Code</string>
+    <string name="pay_button">Pay</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+    <string name="cancel_url">Cancel Url</string>
+    <string name="rsa_url">RSA Key Url</string>
+
+
+    <string-array name="instruction">
+
+        <item>Largely Clear</item>
+        <item>Medium Clear</item>
+        <item>Not Clear</item>
+
+    </string-array>
+
+    <string-array name="experience">
+
+        <item>Good</item>
+        <item>Better</item>
+        <item>Best</item>
+
+    </string-array>
+
+</resources>

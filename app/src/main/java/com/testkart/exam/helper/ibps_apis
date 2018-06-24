@@ -1,0 +1,41 @@
+IBPS Apis
+
+1 IBPS WEB URL
+http://elfemo.com/envato/demos/edu-ibps/
+
+ADMIN
+http://elfemo.com/envato/demos/edu-ibps/Completes
+
+2 GET PACKAGES
+http://elfemo.com/envato/demos/edu-ibps/rest/Packages/index.json
+
+3 CHECK COUPON
+http://elfemo.com/envato/demos/edu-ibps/rest/Checkouts/coupon.json
+public_key:235B06A674614EB
+private_key:f73a528ef3e893b2b4fcbc7cd24011207d472d8986bc45ab1f883f32502bc05f
+coupon_code:DEMO10
+total_amount:20
+
+4 REMOVE COUPON
+http://elfemo.com/envato/demos/edu-ibps/rest/Checkouts/couponDelete.json
+public_key:235B06A674614EB
+private_key:f73a528ef3e893b2b4fcbc7cd24011207d472d8986bc45ab1f883f32502bc05f
+please integrate above apis
+
+5 PLACE ORDER
+http://elfemo.com/envato/demos/edu-ibps/rest/Checkouts/placeOrder.json
+{
+ "public_key": "235B06A674614EB",
+ "private_key": "f73a528ef3e893b2b4fcbc7cd24011207d472d8986bc45ab1f883f32502bc05f",
+ "responses": [
+           1,
+           2
+       ]
+   }
+
+6  PAYMENT GATEWAY (webview)
+http://elfemo.com/envato/demos/edu-ibps/Checkouts/paymentMethod
+
+7 GET EXAM
+http://elfemo.com/envato/demos/edu-ibps/rest/Exams/start.json?id=1&public_key=E7C6C3EDBA0E1A1&private_key=0f54cd7a5a18633d71c6cc408bf121a15a3e1bf93f6c2a9f09cace90e3c696ef
+

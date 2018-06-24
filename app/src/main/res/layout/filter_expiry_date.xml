@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/filterExpiry"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FROM"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="Enter Start Date"
+            android:drawableEnd="@drawable/ic_today_black_24dp"
+            android:background="@drawable/bg_bold_round"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TO"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/endDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="15dp"
+            android:text="Enter End Date"
+            android:drawableEnd="@drawable/ic_today_black_24dp"
+            android:background="@drawable/bg_bold_round"/>
+
+    </LinearLayout>
+
+</LinearLayout>

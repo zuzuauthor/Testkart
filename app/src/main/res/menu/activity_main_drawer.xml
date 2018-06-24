@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/testkart_home_vector"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard_black_24dp"
+            android:title="My Dashboard" />
+
+        <item
+            android:id="@+id/nav_buy_packages"
+            android:icon="@drawable/testkart_shopping_bag"
+            android:title="Buy Exams" />
+
+        <item
+            android:id="@+id/nav_banking_digest"
+            android:icon="@drawable/ic_developer_board_black_24dp"
+            android:title="Buy Magazine" />
+
+        <item
+            android:id="@+id/nav_study_material"
+            android:icon="@drawable/study_material_vector"
+            android:title="Study Material" />
+
+        <item
+            android:id="@+id/nav_leaderboard"
+            android:icon="@drawable/ic_testkart_equalizer_black_24dp"
+            android:title="Leaderboard" />
+        <item
+            android:id="@+id/nav_myexam"
+            android:icon="@drawable/ic_testkart_important_devices_black_24dp"
+            android:title="My Exams" />
+
+        <item
+            android:id="@+id/nav_my_magazines"
+            android:icon="@drawable/ic_library_books_black_24dp"
+            android:title="My Magazines" />
+
+        <item
+            android:id="@+id/nav_myresult"
+            android:icon="@drawable/ic_testkart_school_black_24dp"
+            android:title="My Result" />
+
+        <item
+            android:id="@+id/nav_group"
+            android:icon="@drawable/ic_group_work_black_24dp"
+            android:visible="false"
+            android:title="Group Performance" />
+
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/payment"
+            android:visible="false"
+            android:title="Payment" />
+
+        <item
+            android:id="@+id/nav_transation"
+            android:icon="@drawable/payment"
+            android:visible="false"
+            android:title="My Payments" />
+
+        <item
+            android:id="@+id/nav_payment_history"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="My Payments" />
+
+        <item
+            android:id="@+id/nav_mailbox"
+            android:icon="@drawable/inbox"
+            android:visible="false"
+            android:title="Mailbox" />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_testkart_person_black_24dp"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_testkart_help_black_24dp"
+            android:title="FAQ" />
+
+        <item
+            android:id="@+id/nav_contact_us"
+            android:icon="@drawable/ic_testkart_call_black_24dp"
+            android:title="Contact us" />
+
+
+        <item
+
+            android:id="@+id/nav_rate_app"
+            android:title="Rate This App"
+            android:icon="@drawable/ic_star_black_24dp"/>
+
+        <item
+            android:id="@+id/nav_more_apps"
+            android:icon="@drawable/ic_apps_black_24dp"
+            android:visible="false"
+            android:title="More Apps" />
+
+
+
+    </group>
+
+    <!--<item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

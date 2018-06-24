@@ -1,0 +1,15 @@
+{
+  "status": true,
+  "message": "Magazine fetch successfully",
+  "response": [
+    {
+      "Magazine": {
+        "id": "4",
+        "title": "demo",
+        "files": "8be3abb1b71ce3363ca53e2126a3eeed.pdf",
+        "ordering": "1",
+        "fexpiry_date": "2018-04-12"
+      }
+    }
+  ]
+}

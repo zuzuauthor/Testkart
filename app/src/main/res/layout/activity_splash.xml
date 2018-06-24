@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#41a9cc">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Edu Expression"
+            android:textSize="33sp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="IBPS"
+            android:layout_marginTop="5dp"
+            android:textSize="23sp"
+            android:textColor="#ffffff"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_splash"/>
+
+
+    <!--<com.github.rahatarmanahmed.cpv.CircularProgressView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progress_view"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="65dp"
+        app:cpv_animAutostart="true"
+        app:cpv_indeterminate="true"
+        app:cpv_color="#ffffff"/>-->
+
+    <TextView
+        android:id="@+id/getStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_pink_button_round"
+        android:textColor="#fdfdfd"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="65dp"
+        android:paddingLeft="25dp"
+        android:visibility="gone"
+        android:paddingRight="25dp"
+        android:textSize="15sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Get Start"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="25dp"
+            android:textColor="#f5f5f5"
+            android:text="Eduexpression is “One size fits all” kind of online examination solution."/>
+
+        <com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:radius="5dp"
+            android:color="#FFFFFF"
+            app:dd_numDots="5"
+            android:layout_gravity="center_horizontal"
+            app:dd_scaleMultiplier="2.5"
+            app:dd_animationDuration="3000"
+            app:dd_horizontalSpacing="4dp" />
+
+    </LinearLayout>
+
+</FrameLayout>

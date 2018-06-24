@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="192dp"
+    android:background="@color/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:gravity="bottom">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@raw/bg_drawer_login"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viewProfilePic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@raw/user_default_image_white_bg"
+                app:civ_border_color="#ccc"
+                android:layout_marginBottom="10dp"
+                app:civ_border_width="1dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login / Register"
+                android:textSize="15sp"
+                android:textColor="#fff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

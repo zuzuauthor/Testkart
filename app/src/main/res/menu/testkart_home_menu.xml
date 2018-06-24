@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/testkart_home_vector"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_exam"
+            android:icon="@drawable/ic_testkart_shopping_bag"
+            android:title="Exams" />
+
+        <item
+            android:id="@+id/nav_banking_digest"
+            android:icon="@drawable/ic_developer_board_black_24dp"
+            android:title="Banking Digest" />
+
+        <item
+            android:id="@+id/nav_study_material"
+            android:icon="@drawable/study_material_vector"
+            android:title="Study Material" />
+
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_testkart_user"
+            android:title="Register" />
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_testkart_login"
+            android:title="Login" />
+
+
+
+
+    </group>
+
+
+    <item android:title="Testkart">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_contact_us"
+                    android:title="Contact Us" />
+
+
+                <item
+
+                    android:id="@+id/nav_live_chat"
+                    android:title="Live Chat"
+                    android:visible="false"/>
+
+                <item
+                    android:id="@+id/nav_about_us"
+                    android:title="About Us" />
+
+                <!--<item
+
+                    android:id="@+id/nav_faq"
+                    android:title="FAQ" />-->
+
+                <item
+
+                    android:id="@+id/nav_terms_of_use"
+                    android:title="Terms of use" />
+
+                <item
+
+                    android:id="@+id/nav_rate_app"
+                    android:title="Rate This App" />
+
+                <item
+
+                    android:id="@+id/nav_more_apps"
+                    android:title="More Apps" />
+
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Our Policies">
+        <menu>
+            <group android:checkableBehavior="single">
+
+                <item
+
+                    android:id="@+id/nav_user_policy"
+                    android:title="User Policy" />
+
+                <item
+
+                    android:id="@+id/nav_privacy_policy"
+                    android:title="Privacy Policy" />
+
+                <item
+
+                    android:id="@+id/nav_refund_policy"
+                    android:title="Refund Policy" />
+
+                <item
+
+                    android:id="@+id/nav_disclaimer"
+                    android:title="Disclaimer" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

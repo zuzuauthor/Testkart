@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="bg_onboarding">false</item>
+    <item type="id" name="tb_logo">false</item>
+    <item type="id" name="onboarding_scroll">false</item>
+    <item type="id" name="bottom_box">false</item>
+    <item type="id" name="login_signup">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="signup">false</item>
+
+</resources>

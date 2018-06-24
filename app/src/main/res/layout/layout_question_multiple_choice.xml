@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/viewQno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="#191919"
+                android:textSize="18sp"
+                android:text="Q1" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/marksView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Marks"/>
+
+
+                    <ImageButton
+                        android:id="@+id/btnMarkReview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        app:srcCompat="@drawable/ic_bookmark_normal_black_24dp"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/viewQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"/>
+
+
+        <LinearLayout
+
+            android:id="@+id/viewOptionGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:id="@+id/optContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:tag="1"
+                android:background="@drawable/bg_round_corners"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/optContainer2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:tag="2"
+                android:background="@drawable/bg_round_corners"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/optContainer3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:tag="3"
+                android:background="@drawable/bg_round_corners"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/optContainer4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:tag="4"
+                android:background="@drawable/bg_round_corners"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/optContainer5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:tag="5"
+                android:background="@drawable/bg_round_corners"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_margin="1dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/optContainer6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:tag="6"
+                android:background="@drawable/bg_round_corners"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"/>
+
+                <WebView
+                    android:id="@+id/opt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_margin="1dp"
+                    android:layout_gravity="center"></WebView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

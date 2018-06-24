@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/examName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam name"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:textColor="#191919"
+                android:layout_gravity="left|center_vertical"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="end"
+                android:paddingRight="15dp"
+                android:textSize="11sp"
+                android:text="date"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight=".5"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/progress"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    app:cpb_background_progressbar_color="@color/colorPrimary"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progressbar_color="@color/colorPrimaryDark"
+                    app:cpb_progressbar_width="10dp" />
+
+                <TextView
+                    android:id="@+id/percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_gravity="center"
+                    android:textColor="#191919"
+                    android:text="68%"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#e0e0e0"/>
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:visibility="gone"
+                app:cpb_background_progressbar_color="#FFCDD2"
+                app:cpb_background_progressbar_width="5dp"
+                app:cpb_progressbar_color="#F44336"
+                app:cpb_progressbar_width="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="35dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/examResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#191919"
+                    android:textSize="15sp"
+                    android:text="Result: "/>
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#191919"
+                    android:textSize="15sp"
+                    android:text="Marks: "/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="14dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/viewdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:visibility="visible"
+                        android:textColor="@color/colorAccent"
+                        android:text="View Details"/>
+
+                    <TextView
+                        android:id="@+id/print"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Print"/>
+
+                    <TextView
+                        android:id="@+id/certificate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        android:padding="5dp"
+                        android:background="@drawable/bg_round_corners"
+                        android:textColor="#191919"
+                        android:layout_marginLeft="10dp"
+                        android:text="Certificate"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiple Login Detected"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        android:textColor="#FFF"
+        android:paddingTop="55dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:background="@color/colorPrimary"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/viewTitleMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="#191919"
+                android:text="You cannot login into multiple devices. Your previous device is "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+
+                android:text="In case you have lost your device or damage please report to the admin@testkart.com"/>
+
+
+            <EditText
+                android:id="@+id/inputProblem"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:gravity="top"
+                android:padding="15dp"
+                android:hint="You can write your problem here"
+                android:background="@drawable/bg_round_corners"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

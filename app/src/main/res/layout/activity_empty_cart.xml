@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/bg_grey_round">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_empty_grey_bag"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="YOUR CART IS EMPTY"
+        android:textStyle="bold"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Add exams or magazine to your cart now!"
+        android:textStyle="bold"
+        android:textColor="#707070"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startShopMagazineButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="35dp"
+            android:paddingEnd="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:textColor="#fff"
+            android:text="BUY MAGAZINE"/>
+
+        <Button
+            android:id="@+id/startShoppingButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="35dp"
+            android:paddingEnd="35dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:textColor="#fff"
+            android:text="BUY EXAMS"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

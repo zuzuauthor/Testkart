@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card">
+
+
+        <com.testkart.exam.testkart.widgets.CustomTextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#191919"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp"
+            android:text="Notification Title"
+            app:customFont="din_light.otf"/>
+
+        <TextView
+            android:id="@+id/notificationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date and time"
+            android:textColor="#c9c9c9"
+            android:layout_marginLeft="15dp"
+            android:textSize="11sp"/>
+
+
+        <com.testkart.exam.testkart.widgets.CustomTextView
+            android:id="@+id/notificationMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp"
+            android:text="Notification message in details."
+            app:customFont="din_light.otf"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.zl.reik.dilatingdotsprogressbar.DilatingDotsProgressBar
+                android:id="@+id/progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:radius="5dp"
+                android:color="@color/colorPrimary"
+                app:dd_numDots="5"
+                android:layout_margin="15dp"
+                android:layout_gravity="center_horizontal"
+                app:dd_scaleMultiplier="2.5"
+                app:dd_animationDuration="3000"
+                app:dd_horizontalSpacing="4dp" />
+
+            <ImageView
+                android:id="@+id/notificationImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true" />
+
+        </FrameLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

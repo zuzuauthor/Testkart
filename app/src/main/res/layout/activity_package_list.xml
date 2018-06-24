@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d7d9e5">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/backButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:srcCompat= "@drawable/ic_arrow_back_white_24dp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/viewActionTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Magazines"
+                android:textColor="#191919"
+                android:layout_gravity="center_vertical"
+
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginRight="25dp">
+
+            <ImageView
+                android:id="@+id/notificationBell"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginEnd="15dp"
+                app:srcCompat="@drawable/ic_testkart_notifications_none_black_24dp"/>
+
+            <ImageView
+                android:id="@+id/cartCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                app:srcCompat="@drawable/testkart_shopping_bag"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:elevation="3dp"
+            android:background="#d7d9e5"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#575965"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:text="Showing"/>
+
+            <TextView
+                android:id="@+id/itemCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textColor="#a6a7ac"
+                android:text="0 items"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/viewEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                app:srcCompat="@drawable/ic_storage_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="No Exam Found"
+                android:textSize="18sp"
+                android:textColor="#191919"/>
+
+        </LinearLayout>
+
+        <GridView
+            android:id="@+id/actGridPackages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:verticalSpacing="1dp"
+            android:horizontalSpacing="1dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"/>
+        
+        <LinearLayout
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            android:elevation="5dp"
+            android:background="#f7f7f7"
+            android:orientation="horizontal">
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:layout_weight=".9">
+
+                <LinearLayout
+                    android:id="@+id/featureExamContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_card">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:rotation="-90"
+                        android:textSize="13sp"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_gravity="center_vertical"
+                        android:text="SHOP BY"/>
+
+
+                    <TextView
+                        android:id="@+id/allTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_round_corners"
+                        android:text="   All   "
+                        android:textSize="15sp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="#399fc6"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_vertical"
+                        android:padding="15dp"/>
+
+                        <ImageView
+                            android:id="@+id/featureExam1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:src="@raw/women"/>
+
+                        <ImageView
+                            android:id="@+id/featureExam2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="15dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:src="@raw/men"/>
+
+                        <ImageView
+                            android:id="@+id/featureExam3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="15dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="center"
+                            android:src="@raw/kids"/>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@+id/filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".2"
+                android:layout_marginLeft="15dp"
+                android:orientation="vertical"
+                >
+
+
+
+                <FrameLayout
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:background="#0cc6a1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="11sp"
+                        android:textColor="#ffffff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="SORT  &amp; FILTER"/>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#0cc6a1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_filter_list_white_24dp"
+                        android:layout_gravity="center" />
+
+                </FrameLayout>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+        
+    </FrameLayout>
+
+</LinearLayout>

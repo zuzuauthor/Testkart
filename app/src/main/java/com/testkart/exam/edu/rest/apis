@@ -1,0 +1,124 @@
+Apis
+
+1 Result: webpage show after exam submit
+
+ http://elfemo.com/demo/server3/api/rest/Results/view?&id=83&public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+2 Print Certificate
+
+ http://elfemo.com/demo/server3/api/crm/Results/certificate/1.pdf?id=81&public_key=51FCDC7B62B153A&private_key=c894939fb723234283f6671866ae913e0135b1a3a1a6d43c4ef8f86c71461224
+
+3 Print Result
+
+ http://elfemo.com/demo/server3/api/crm/Results/printresult?id=81&public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+4 Group Performance  - done
+
+ http://elfemo.com/demo/server3/api/rest/Groupperformances/index?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+5 Dashboard - done
+
+ http://elfemo.com/demo/server3/api/rest/Dashboards/index?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+6 Top 5 Exam for Dashboard - cannot implement
+
+ http://elfemo.com/demo/server3/api/rest/Dashboards/exam.json?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+7 Transaction History - done
+
+ http://elfemo.com/demo/server3/api/rest/Transactionhistorys/index.json?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+8 Wallet Balance  - done
+
+ http://elfemo.com/demo/server3/api/rest/Dashboards/balance.json?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+9 Mail Count - done
+
+ http://elfemo.com/demo/server3/api/rest/Dashboards/mail.json?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+10 Login.json API
+
+ Login.json API
+ sysSetting->Configuration->paid_exam=1
+ then show wallet balance icon on top
+ Payment & Transaction History Link in sidebar
+ Expired Exam Tab in My Exam
+ currency key added
+ jahan jahan currency icon hai usko currency ki image se hi dikhana hai
+ sysSetting->Configuration->certificate =true
+ then show Results under certification link
+ otherwise no cerificate link shown
+
+
+11 Change Password - done
+
+ http://elfemo.com/demo/server3/api/rest/Profiles/changePass.json
+
+ form data
+ oldPassword:1234
+ password:demo123
+ con_password:demo123
+ public_key:77FDD3809E32482
+ private_key:5f4ce1303ea0472b0a24565c6307d91bb8ab4338ef232d1ff719150361ceccb0
+
+
+12 Edit Profile - done
+
+ http://elfemo.com/demo/server3/api/rest/Profiles/editProfile.json
+
+ form data
+ enroll:9000
+ phone:9839081698
+ guardian_phone:0532400
+ public_key:77FDD3809E32482
+ private_key:5f4ce1303ea0472b0a24565c6307d91bb8ab4338ef232d1ff719150361ceccb0
+
+
+13 Change Photo - done
+
+ http://elfemo.com/demo/server3/api/rest/Profiles/changePhoto.json
+
+ form data
+ photo= file
+ public_key= 77FDD3809E32482
+ public_key:77FDD3809E32482
+ private_key:5f4ce1303ea0472b0a24565c6307d91bb8ab4338ef232d1ff719150361ceccb0
+
+
+
+//will check later
+
+14 Feedback - done
+
+  Feedback Show data
+  1. array('Largely Clear'=>__('Largely Clear'),'Medium Clear'=>__('Medium Clear'),'Not Clear'=>__('Not Clear'))
+  2. array('Largely Clear'=>__('Largely Clear'),'Medium Clear'=>__('Medium Clear'),'Not Clear'=>__('Not Clear'))
+  3. array('Good'=>__('Good'),'Better'=>__('Better'),'Best'=>__('Best'))
+
+
+15 Submit Exam responses - done
+
+
+16 View Exam
+
+ http://elfemo.com/demo/server3/api/rest/Exams/view/1.json?public_key=707F978BD742495&private_key=6e7c2389537b6a1cfec0d163b2ba545d4d73f3ac78eb24348024576dfa00ad39
+
+
+17 Instruction Exam
+
+ http://elfemo.com/demo/server3/api/rest/Exams/instruction.json?id=1&public_key=FCE152E9028016F&private_key=3a8bd324f4ec71659088c87443745494d7361f7760e78f172652fd21158d8a18
+
+ if isPaid=true then normal
+ if isPaid =false then given message shown
+
+
+18 Remaining Exam API in dashboard
+   http://elfemo.com/demo/server3/api/rest/Dashboards/remainingExam.json?public_key=2654D11523B3F14&private_key=663f2290f4a985cf9fa083cfe9dd45e9ba61c8db7a953349dad2ac160b50c011
+
+19 Exam Expired Finish API
+   http://elfemo.com/demo/server3/api/rest/Exams/expiredFinish.json
+   Form data
+   public_key:BB618BE65ABD85F
+   private_key:e2dc3eaa9dfde455eb8e29451ce74b2e0e0d240e9242f719e474f4285d981248
+   exam_id:1
+   1 is dynamic exam id

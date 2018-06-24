@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#191919"
+        android:layout_margin="10dp"
+        android:text="Downloading File" />
+
+    <ProgressBar
+        android:id="@+id/progressBarView"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:text="Progress: 00%" />
+
+        <TextView
+            android:id="@+id/size1"
+            android:layout_width="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="35dp"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#191919"
+            android:text="File Size: 0K" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

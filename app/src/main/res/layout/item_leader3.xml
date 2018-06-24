@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:foo="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/viewProfilePic3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:src="@raw/user_default_image"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp" />
+
+            <ImageView
+                android:id="@+id/viewRank3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#191919"
+                android:padding="5dp"
+                android:text="0"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="2dp"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <com.testkart.exam.testkart.widgets.CustomTextView
+                android:id="@+id/studentName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textColor="#191919"
+                foo:customFont="din_light.otf"/>
+
+            <com.testkart.exam.testkart.widgets.CustomTextView
+                android:id="@+id/groupName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exam name"
+                android:visibility="gone"
+                android:textSize="13sp"
+                foo:customFont="din_light.otf"/>
+
+            <com.testkart.exam.testkart.widgets.CustomTextView
+                android:id="@+id/examName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="exam name"
+
+                android:textSize="13sp"
+                foo:customFont="din_light.otf"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/trophy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/trophy3"/>
+
+                <!--<TextView
+                    android:id="@+id/viewRank3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#191919"
+                    android:text="0"
+                    android:layout_gravity="center" />-->
+
+                <TextView
+                    android:id="@+id/percentage3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="#191919"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="15sp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:background="@drawable/bg_blue_btn_round"
+                    android:layout_marginTop="5dp"
+                    android:text="99.30%"/>
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#057e98"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/viewProfilePic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerCrop"
+            android:src="@raw/default_profile"
+            app:civ_border_color="#FFFFFFFF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/viewStudentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Studen Name"
+            android:maxLength="13"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center"
+            android:textSize="23sp"
+            android:textColor="#f5f5f5"/>
+
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Mobile No"/>
+
+           <TextView
+               android:id="@+id/viewEnroll"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textSize="18sp"
+               android:textColor="#191919"
+               android:text="000"/>
+
+           </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:visibility="gone"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Address"/>
+
+           <TextView
+               android:id="@+id/viewInputAddress"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textSize="18sp"
+               android:textColor="#191919"
+               android:text="MJ Streets Lucknow"/>
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:visibility="gone"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Contact Number"/>
+
+           <TextView
+               android:id="@+id/viewContact"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textSize="18sp"
+               android:textColor="#191919"
+               android:text="9999996663"/>
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Email"/>
+
+           <TextView
+               android:id="@+id/viewEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textSize="18sp"
+               android:textColor="#191919"
+               android:text="student@student.com"/>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:layout_marginTop="10dp"
+           android:visibility="gone"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Status"/>
+
+           <TextView
+               android:id="@+id/viewActive"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:textSize="18sp"
+               android:textColor="#191919"
+               android:text="Active"/>
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

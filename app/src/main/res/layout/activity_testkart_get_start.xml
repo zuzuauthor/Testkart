@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/signupButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="#191919"
+                    android:layout_weight="1"
+                    android:textStyle="normal"
+                    android:text="SIGN UP"/>
+
+                <Button
+                    android:id="@+id/loginButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="#191919"
+                    android:layout_weight="1"
+                    android:textStyle="normal"
+                    android:text="LOGIN"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@raw/bg_r_l"
+                android:scaleType="centerCrop"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80000000"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_back_white"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exam Preparation Simplified!"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="15dp"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Practice, Analyse and Improve"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="128dp"
+            android:background="@drawable/background_card"
+            android:padding="20dp"
+            android:id="@+id/frameLayout"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@raw/test_logo2"/>
+
+        </FrameLayout>
+
+        <ListView
+            android:id="@+id/features"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/frameLayout"
+            android:layout_above="@+id/linearLayout2" />
+
+    </RelativeLayout>
+
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/color_appSecondaryBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@id/bg_onboarding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-23dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_onboarding" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tb_logo"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="55dp"
+            android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam Preparation Simplified!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_small"
+                android:text="Practice, Analyse and Improve"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/tb_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bg_onboarding"
+            android:layout_marginTop="-55dp"
+            android:src="@drawable/ic_logo_shoadow" />
+    </RelativeLayout>
+
+    &lt;!&ndash; Unknown data &ndash;&gt;
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <ScrollView
+            android:id="@id/onboarding_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_medium_large"
+                android:paddingRight="@dimen/padding_medium_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selector_bg_secondary_background_button"
+                    android:clickable="true"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_onboarding_slide00" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="@dimen/padding_medium_large"
+                        android:text="Always stay ahead of your exam and competition with #1 Test Prep App."
+                        android:textColor="?attr/color_textSecondary" />
+                </LinearLayout>
+
+                <include layout="@layout/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selector_bg_secondary_background_button"
+                    android:clickable="true"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_onboarding_slide01" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="@dimen/padding_medium_large"
+                        android:text="Practice unlimited questions and improve your speed and accuracy."
+                        android:textColor="?attr/color_textSecondary" />
+                </LinearLayout>
+
+                <include layout="@layout/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selector_bg_secondary_background_button"
+                    android:clickable="true"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_onboarding_slide02" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="@dimen/padding_medium_large"
+                        android:text="Analyse your performance, know your strengths and weaknesses and much more."
+                        android:textColor="?attr/color_textSecondary" />
+                </LinearLayout>
+
+                <include layout="@layout/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selector_bg_secondary_background_button"
+                    android:clickable="true"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_onboarding_slide03" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="@dimen/padding_medium_large"
+                        android:text="Take exam-like mock tests on best mobile test platform"
+                        android:textColor="?attr/color_textSecondary" />
+                </LinearLayout>
+
+                <include layout="@layout/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selector_bg_secondary_background_button"
+                    android:clickable="true"
+                    android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_medium">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_onboarding_slide04" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="2dp"
+                        android:padding="@dimen/padding_medium_large"
+                        android:text="Read and learn from insightful articles - anytime, anywhere."
+                        android:textColor="?attr/color_textSecondary" />
+                </LinearLayout>
+
+                <include layout="@layout/list_divider" />
+            </LinearLayout>
+        </ScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="UNKNOWN_DATA_0xf01"
+            android:background="@drawable/white_shadow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="UNKNOWN_DATA_0xf01"
+            android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+            android:background="@drawable/white_shadow"
+            android:rotation="180.0" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/bottom_box"
+        android:layout_width="match_parent"
+        android:layout_height="UNKNOWN_DATA_0x7f0a0170"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="?attr/color_appSecondaryBackground"
+        android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+        android:orientation="vertical">
+
+        <View
+            android:id="@id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="UNKNOWN_DATA_0x7f0a0021"
+            android:layout_marginTop="@dimen/layout_marginTop_divider_social_firstactivity"
+            android:alpha="0.2"
+            android:background="?attr/color_dividerSecondary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@id/signup"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                android:layout_weight="1.0"
+                android:background="?attr/selector_bg_secondary_background_button"
+                android:clickable="true"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="SIGN UP"
+                android:textColor="?attr/color_textPrimary" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:alpha="0.2"
+                android:background="?attr/color_dividerSecondary" />
+
+            <TextView
+                android:id="@id/login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:layout_weight="1.0"
+                android:background="?attr/selector_bg_secondary_background_button"
+                android:clickable="true"
+                android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:text="LOGIN"
+                android:textColor="?attr/color_textPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>-->

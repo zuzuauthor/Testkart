@@ -1,0 +1,112 @@
+{
+  "status": true,
+  "message": "MagazinePackage fetch successfully",
+  "currency": "INR",
+  "response": [
+    {
+      "MagazinePackage": {
+        "id": "39",
+        "name": "demo1",
+        "description": "as",
+        "amount": "2.00",
+        "show_amount": "2.00",
+        "photo": null,
+        "expiry_days": "2018-02-10",
+        "expiry_month": "2",
+        "status": "Active",
+        "ordering": "2",
+        "type": "1",
+        "created": "2018-02-11 06:36:28",
+        "modified": "2018-02-11 18:44:18"
+      },
+      "Magazine": [
+        {
+          "id": "4",
+          "title": "demo",
+          "files": "8be3abb1b71ce3363ca53e2126a3eeed.pdf",
+          "status": "Published",
+          "ordering": "1",
+          "created": "2018-02-12 15:37:02",
+          "modified": "2018-02-12 15:37:02",
+          "MagazinesPackage": {
+            "id": "15",
+            "package_id": "39",
+            "magazine_id": "4",
+            "created": "2018-02-12 15:37:02",
+            "modified": "2018-02-12 15:37:02"
+          }
+        }
+      ]
+    },
+    {
+      "MagazinePackage": {
+        "id": "38",
+        "name": "asdads",
+        "description": "sfsfsfgs",
+        "amount": "5.00",
+        "show_amount": "2.00",
+        "photo": "88bdead923ab2319b429bec3d2ba6157.jpg",
+        "expiry_days": null,
+        "expiry_month": "2",
+        "status": "Active",
+        "ordering": "4",
+        "type": "1",
+        "created": "2018-02-11 06:35:15",
+        "modified": "2018-02-11 18:44:18"
+      },
+      "Magazine": [
+        {
+          "id": "4",
+          "title": "demo",
+          "files": "8be3abb1b71ce3363ca53e2126a3eeed.pdf",
+          "status": "Published",
+          "ordering": "1",
+          "created": "2018-02-12 15:37:02",
+          "modified": "2018-02-12 15:37:02",
+          "MagazinesPackage": {
+            "id": "14",
+            "package_id": "38",
+            "magazine_id": "4",
+            "created": "2018-02-12 15:37:02",
+            "modified": "2018-02-12 15:37:02"
+          }
+        }
+      ]
+    },
+    {
+      "MagazinePackage": {
+        "id": "44",
+        "name": "asadad",
+        "description": "asd",
+        "amount": "3.00",
+        "show_amount": "3.00",
+        "photo": null,
+        "expiry_days": null,
+        "expiry_month": "1",
+        "status": "Active",
+        "ordering": "5",
+        "type": "1",
+        "created": "2018-02-11 01:14:46",
+        "modified": "2018-02-11 18:44:18"
+      },
+      "Magazine": [
+        {
+          "id": "4",
+          "title": "demo",
+          "files": "8be3abb1b71ce3363ca53e2126a3eeed.pdf",
+          "status": "Published",
+          "ordering": "1",
+          "created": "2018-02-12 15:37:02",
+          "modified": "2018-02-12 15:37:02",
+          "MagazinesPackage": {
+            "id": "13",
+            "package_id": "44",
+            "magazine_id": "4",
+            "created": "2018-02-12 15:37:02",
+            "modified": "2018-02-12 15:37:02"
+          }
+        }
+      ]
+    }
+  ]
+}

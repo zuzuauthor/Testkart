@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/imageBase"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/adImgPackage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/no_image_available_150"/>
+
+            </FrameLayout>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/adTxtPackageName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="My Magazine"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:gravity="center_horizontal"
+                android:textStyle="bold"
+                android:singleLine="true"
+                autofit:minTextSize="8sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <!--<TextViewCompat
+                    android:id="@+id/adTxtPackageName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    appt:autoSizeTextType="uniform"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#33363f"
+                    android:text="Package Name"/>-->
+
+
+
+                <TextView
+                    android:id="@+id/adTxtAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:text=""/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>.
+
+</FrameLayout>
