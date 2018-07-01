@@ -100,13 +100,14 @@
                     android:visibility="gone"
                     app:srcCompat="@drawable/trophy1"/>
 
-                <TextView
+                <me.grantland.widget.AutofitTextView
                     android:id="@+id/percentage"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:textColor="#191919"
                     android:textSize="15sp"
+                    android:lines="1"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:paddingTop="3dp"

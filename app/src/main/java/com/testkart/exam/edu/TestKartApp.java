@@ -35,6 +35,7 @@ public class TestKartApp extends MultiDexApplication {
 
         AutoErrorReporter.get(this)
                 .setEmailAddresses("admin@testkart.com")
+                .setEmailAddresses("zuzuauthor@gmail.com")
                 .setEmailSubject("Testkart Crash Report")
                 .start();
 

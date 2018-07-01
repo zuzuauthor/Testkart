@@ -25,7 +25,7 @@ import retrofit2.Callback;
 
 /**
  * Created by testkart on 18/5/17.
- * 3, 4, 8, 9, 10, 11, 13,
+ *
  */
 
 public class LeaderboardActivity1 extends AppCompatActivity {

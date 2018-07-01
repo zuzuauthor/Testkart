@@ -152,6 +152,14 @@ public class ReadFragment extends Fragment implements
 
     public void scrollToTop(int speedMode) {
 
+        if(animTop != null && animTop.isRunning()){
+
+            animTop.cancel();
+            //  anim.end();
+            animTop = null;
+
+        }
+
         long duration = 5000;
 
         if (speedMode == 1) {
@@ -224,18 +232,27 @@ public class ReadFragment extends Fragment implements
         Log.d("adfa", "We Scrolled etc...");
     }
 
+    ObjectAnimator animTop;
     @Override
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.fab_up) {
 
-            ObjectAnimator anim = ObjectAnimator.ofInt(viewContent, "scrollY",
+            if(anim != null && anim.isRunning()){
+
+                anim.cancel();
+                //  anim.end();
+                anim = null;
+
+            }
+
+            animTop = ObjectAnimator.ofInt(viewContent, "scrollY",
                     viewContent.getScrollY(), 0);
-            anim.setDuration(1000);
+            animTop.setDuration(1000);
 
             if(viewContent.getScrollY() > 0){
 
-                anim.start();
+                animTop.start();
             }
             //viewContent.scrollTo(0, 0);
 
@@ -251,9 +268,20 @@ public class ReadFragment extends Fragment implements
     @Override
     public boolean onSingleTapConfirmed(MotionEvent motionEvent) {
 
-        if (mListener != null) {
+        if(anim != null && anim.isRunning()){
 
-            mListener.onSingleTap();
+
+            anim.cancel();
+          //  anim.end();
+            anim = null;
+
+        }else{
+
+            if (mListener != null) {
+
+                mListener.onSingleTap();
+
+            }
         }
 
         return true;

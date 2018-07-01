@@ -26,6 +26,7 @@ import com.linchaolong.android.imagepicker.ImagePicker;
 import com.testkart.exam.R;
 import com.testkart.exam.edu.helper.FileUploader;
 import com.testkart.exam.edu.helper.MknUtils;
+import com.testkart.exam.edu.helper.MyGlideEngine;
 import com.testkart.exam.edu.helper.SessionManager;
 import com.testkart.exam.edu.models.Consts;
 import com.testkart.exam.edu.profile.EditProfileDIalog;
@@ -359,7 +360,7 @@ public class ProfileActivity extends AppCompatActivity implements OnProfileEditL
                             //.gridExpectedSize(getResources().getDimensionPixelSize(16))
                             .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED)
                             .thumbnailScale(0.85f)
-                            .imageEngine(new GlideEngine())
+                            .imageEngine(new MyGlideEngine())
                             .forResult(REQUEST_CODE_CHOOSE);
 
                 }

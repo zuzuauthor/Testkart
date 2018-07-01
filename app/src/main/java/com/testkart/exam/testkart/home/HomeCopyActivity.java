@@ -73,6 +73,7 @@ import berlin.volders.badger.BadgeShape;
 import berlin.volders.badger.Badger;
 import berlin.volders.badger.CountBadge;
 import de.hdodenhof.circleimageview.CircleImageView;
+import me.grantland.widget.AutofitTextView;
 import retrofit2.Call;
 import retrofit2.Callback;
 
@@ -1085,7 +1086,7 @@ public class HomeCopyActivity extends AppCompatActivity {
     TextView groupName1, groupName2, groupName3;
     ImageView viewRank1, viewRank2, viewRank3;
     ImageView trophy1, trophy2, trophy3;
-    TextView percentage1, percentage2, percentage3;
+    AutofitTextView percentage1, percentage2, percentage3;
 
     private void initLeaderViews() {
 

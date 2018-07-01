@@ -81,6 +81,7 @@ import berlin.volders.badger.BadgeShape;
 import berlin.volders.badger.Badger;
 import berlin.volders.badger.CountBadge;
 import de.hdodenhof.circleimageview.CircleImageView;
+import me.grantland.widget.AutofitTextView;
 import retrofit2.Call;
 import retrofit2.Callback;
 
@@ -1124,7 +1125,7 @@ public class Hello extends AppCompatActivity {
     TextView groupName1, groupName2, groupName3;
     ImageView viewRank1, viewRank2, viewRank3;
     ImageView trophy1, trophy2, trophy3;
-    TextView percentage1, percentage2, percentage3;
+    AutofitTextView percentage1, percentage2, percentage3;
 
     private void initLeaderViews() {
 
@@ -1133,7 +1134,7 @@ public class Hello extends AppCompatActivity {
         studentName1 = (TextView)findViewById(R.id.studentName1);
         examName1 = (TextView)findViewById(R.id.examName1);
         trophy1 = (ImageView)findViewById(R.id.trophy1);
-        percentage1 = (TextView)findViewById(R.id.percentage1);
+        percentage1 = (AutofitTextView)findViewById(R.id.percentage1);
         viewRank1 = (ImageView)findViewById(R.id.viewRank1);
         groupName1 = (TextView)findViewById(R.id.groupName1);
 
@@ -1142,7 +1143,7 @@ public class Hello extends AppCompatActivity {
         studentName2 = (TextView)findViewById(R.id.studentName2);
         examName2 = (TextView)findViewById(R.id.examName2);
         trophy2 = (ImageView)findViewById(R.id.trophy2);
-        percentage2 = (TextView)findViewById(R.id.percentage2);
+        percentage2 = (AutofitTextView)findViewById(R.id.percentage2);
         viewRank2 = (ImageView)findViewById(R.id.viewRank2);
         groupName2 = (TextView)findViewById(R.id.groupName2);
 
@@ -1151,7 +1152,7 @@ public class Hello extends AppCompatActivity {
         studentName3 = (TextView)findViewById(R.id.studentName3);
         examName3 = (TextView)findViewById(R.id.examName3);
         trophy3 = (ImageView)findViewById(R.id.trophy3);
-        percentage3 = (TextView)findViewById(R.id.percentage3);
+        percentage3 = (AutofitTextView)findViewById(R.id.percentage3);
         viewRank3 = (ImageView)findViewById(R.id.viewRank3);
         groupName3 = (TextView)findViewById(R.id.groupName3);
 

@@ -17,6 +17,7 @@ import com.testkart.exam.R;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
+import me.grantland.widget.AutofitTextView;
 
 /**
  * Created by testkart on 18/5/17.
@@ -63,7 +64,7 @@ public class LeaderboardAdapter extends BaseAdapter {
         TextView viewSName = (TextView) convertView.findViewById(R.id.studentName1);
         TextView examName = (TextView) convertView.findViewById(R.id.examName1);
         ImageView trophy = (ImageView) convertView.findViewById(R.id.trophy1);
-        TextView percentage = (TextView) convertView.findViewById(R.id.percentage);
+        AutofitTextView percentage = (AutofitTextView) convertView.findViewById(R.id.percentage);
         ImageView viewRank = (ImageView) convertView.findViewById(R.id.viewRank1);
 
         TextView groupName = (TextView) convertView.findViewById(R.id.groupName);

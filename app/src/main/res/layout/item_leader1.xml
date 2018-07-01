@@ -42,9 +42,10 @@
         </FrameLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
             android:layout_marginLeft="15dp"
             android:orientation="vertical">
 
@@ -77,8 +78,9 @@
         </LinearLayout>
 
         <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".35">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -105,7 +107,7 @@
                     android:text="0"
                     android:layout_gravity="center" />-->
 
-                <TextView
+                <me.grantland.widget.AutofitTextView
                     android:id="@+id/percentage1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -114,6 +116,7 @@
                     android:textSize="15sp"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
+                    android:lines="1"
                     android:paddingTop="3dp"
                     android:paddingBottom="3dp"
                     android:background="@drawable/bg_blue_btn_round"
