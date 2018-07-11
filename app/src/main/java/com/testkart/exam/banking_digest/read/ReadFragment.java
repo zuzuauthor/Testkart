@@ -79,7 +79,12 @@ public class ReadFragment extends Fragment implements
 
         viewContent = view.findViewById(R.id.viewContent);
         viewContent.setLongClickable(false);
-        viewContent.setOnLongClickListener(null);
+        viewContent.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                return true;
+            }
+        });
         viewContent.setOnScrollChangedCallback(this);
 
         fab_up.setOnClickListener(this);
@@ -164,7 +169,7 @@ public class ReadFragment extends Fragment implements
 
         if (speedMode == 1) {
             //cheetha
-            duration = 1000;
+            duration = 15000;
 
         } else if (speedMode == 2) {
             //rabbit
@@ -177,10 +182,10 @@ public class ReadFragment extends Fragment implements
             else
                 duration = viewContent.getContentHeight();*/
 
-            duration = viewContent.getContentHeight();
+            duration = viewContent.getContentHeight() + 20000;
         } else {
             //turtle
-            duration = viewContent.getContentHeight() + 22000;
+            duration = viewContent.getContentHeight() + 88000;
         }
 
         int h = viewContent.getContentHeight();
@@ -248,7 +253,7 @@ public class ReadFragment extends Fragment implements
 
             animTop = ObjectAnimator.ofInt(viewContent, "scrollY",
                     viewContent.getScrollY(), 0);
-            animTop.setDuration(1000);
+            animTop.setDuration(3000);
 
             if(viewContent.getScrollY() > 0){
 

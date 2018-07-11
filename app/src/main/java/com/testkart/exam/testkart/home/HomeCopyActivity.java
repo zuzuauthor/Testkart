@@ -37,6 +37,7 @@ import com.freegeek.android.materialbanner.holder.ViewHolderCreator;
 import com.freegeek.android.materialbanner.view.indicator.CirclePageIndicator;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.testkart.exam.R;
+import com.testkart.exam.banking_digest.buy.MagazinesListActivity;
 import com.testkart.exam.edu.TestKartApp;
 import com.testkart.exam.edu.helper.DBHelper;
 import com.testkart.exam.edu.helper.SessionManager;
@@ -787,7 +788,9 @@ public class HomeCopyActivity extends AppCompatActivity {
 
             case R.id.nav_banking_digest:
 
-                gotoActivity(PackageListActivity.class, null);
+                //gotoActivity(PackageListActivity.class, null);
+                    Ctx.startActivity( new Intent(context, MagazinesListActivity.class));
+
 
                 break;
 

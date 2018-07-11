@@ -9,12 +9,12 @@
         <item
             android:id="@+id/nav_exam"
             android:icon="@drawable/ic_testkart_shopping_bag"
-            android:title="Exams" />
+            android:title="Buy Exams" />
 
         <item
             android:id="@+id/nav_banking_digest"
             android:icon="@drawable/ic_developer_board_black_24dp"
-            android:title="Buy Magazine" />
+            android:title="Buy Magazines" />
 
         <item
             android:id="@+id/nav_study_material"

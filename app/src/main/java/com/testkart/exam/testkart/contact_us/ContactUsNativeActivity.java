@@ -35,6 +35,7 @@ import android.widget.Toast;
 
 import com.testkart.exam.R;
 import com.testkart.exam.edu.TestKartApp;
+import com.testkart.exam.edu.helper.MyGlideEngine;
 import com.testkart.exam.edu.helper.SessionManager;
 import com.testkart.exam.edu.models.Consts;
 import com.testkart.exam.edu.rest.ApiClient;
@@ -207,7 +208,7 @@ public class ContactUsNativeActivity extends AppCompatActivity implements Valida
                         //.gridExpectedSize(getResources().getDimensionPixelSize(16))
                         .restrictOrientation(ActivityInfo.SCREEN_ORIENTATION_UNSPECIFIED)
                         .thumbnailScale(0.85f)
-                        .imageEngine(new GlideEngine())
+                        .imageEngine(new MyGlideEngine())
                         .forResult(REQUEST_CODE_CHOOSE);
             }
         });
